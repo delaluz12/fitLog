@@ -63,13 +63,15 @@ router.get('/workouts/range', async (req, res) => {
             {
                 $addFields: { totalDuration: { $sum: "$exercises.duration" } }
             },
-        ]);
+        ]).sort({day: -1}).limit(7);
         // console.log(data);
-
+        //flip the order of array 
+        let dataArr = data.reverse();
+        // console.log(dataArr);
         if (!data) {
             res.status(400).json("No Workouts");
         }
-        res.status(200).json(data);
+        res.status(200).json(dataArr);
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
