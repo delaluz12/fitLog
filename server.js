@@ -10,16 +10,16 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
 });
 
 
 //require routes
-    //html routes to display the public pages
-app.use(require("./routes/views.js"));
-    //api routes
+app.use(require("./routes"))
+   
 
     
 
