@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> A workout tracker for fitness lovers of all levels. Allows Users to record resistance and cardio exercises to their workout. In addition to addition individual exercises to their workouts, Users can also view time and weight stats of workouts completed in the last 7 days.
+> A workout tracker for fitness lovers of all levels. Allows Users to record resistance and cardio exercises to their workout. In addition to being able to add individual exercises to their workouts, Users can also view time and weight stats of workouts completed in the last 7 days.
 
 ### 🏠 [Deployed Site](https://fit-log-workout-tracker.herokuapp.com/)
 
@@ -17,7 +17,7 @@
 
 ## Funtionality Demo
 
-gif here
+![Animation demo](./assets/demo.gif)
 
 
 ## Technologies Used
